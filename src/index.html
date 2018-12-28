@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Voting System</title>
+  <link href='css/bootstrap.min1.css' rel='stylesheet' type='text/css'>
+  <link href='css/app.css' rel='stylesheet' type='text/css'>
+</head>
+
+<body class="container">
+  <h2>Voting System</h2>
+  <div id="address"></div>
+  <div class="table-responsive">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>候选人序号</th>
+          <th>候选人票数</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td id="candidate-1">0</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td id="candidate-2">0</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td id="candidate-3">0</td>
+        </tr>
+      </tbody>
+    </table>
+    <div id="msg"></div>
+  </div>
+
+  <div>
+    <input placeholder="发选票到这个账户" type="text" id="giveaddr" />
+    <button id ="give" class="btn btn-primary">发票</button>
+  </div>
+  <div>
+    <input placeholder="想推选的候选人序号" type="text" id="candidate" />
+    <button id ="vote" class="btn btn-primary">投票</button>
+  </div>
+  <!--
+  <div >
+  <input placeholder="是否授权给其他人，授权填1，不授权填0" type="text" id="value" />
+  </div> 
+  -->
+  <input placeholder="接受授权的账户" type="text" id="deladdr" />
+  <button id ="delegate" class="btn btn-primary">授权</button>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<script src="js/bootstrap.min.js"></script>
+
+<script src="js/web3.min.js"></script>
+<script src="js/truffle-contract.js"></script>
+
+<script src="js/app.js"></script>
+</html>
